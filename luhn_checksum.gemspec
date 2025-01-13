@@ -6,7 +6,7 @@ Gem::Specification.new do |gem|
   gem.description   = 'Efficient Luhn checksum validator'
   gem.summary       = 'Efficient Luhn checksum validator'
   gem.homepage      = 'https://github.com/zendesk/luhn_checksum'
-  gem.required_ruby_version = '>= 2.6.0'
+  gem.required_ruby_version = '>= 3.1'
 
   gem.files         = `git ls-files`.split($\)
   gem.executables   = gem.files.grep(%r{^bin/}).map { |f| File.basename(f) }
