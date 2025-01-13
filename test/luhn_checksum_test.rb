@@ -5,7 +5,7 @@ require_relative 'helper'
 # Test data courtsey of:
 # * https://github.com/square/luhnybin
 # * http://en.wikipedia.org/wiki/Luhn_algorithm
-class LuhnChecksumTest < MiniTest::Test
+class LuhnChecksumTest < Minitest::Test
   describe 'Luhn filter' do
     it 'matches checksums' do
       real_luhns = ['123451234512348', '5678', '49927398716', '1234567812345670', '56613959932537']
