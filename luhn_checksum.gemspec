@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require_relative 'lib/luhn_checksum/version'
+
 Gem::Specification.new do |gem|
   gem.authors       = ['Eric Chapweske', 'Gary Grossman']
   gem.email         = ['ggrossman@zendesk.com']
@@ -12,7 +14,7 @@ Gem::Specification.new do |gem|
   gem.executables   = gem.files.grep(%r{^bin/}).map { |f| File.basename(f) }
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.name          = 'luhn_checksum'
-  gem.version       = '0.2.0'
+  gem.version       = LuhnChecksum::VERSION
 
   gem.add_development_dependency('bump')
   gem.add_development_dependency('bundler')
